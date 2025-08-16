@@ -9,6 +9,5 @@ export interface BaseEntity {
 export interface Widget extends BaseEntity {
   title: string;
   description: string;
-  
-}
 
+}
