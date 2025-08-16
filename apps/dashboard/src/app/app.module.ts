@@ -17,6 +17,7 @@ import {
   CoreDataModule,
   coreDataRoutes,
 } from '@fem-production-angular/core-data';
+import { RoutingModule } from './routing.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,6 +29,7 @@ import {
     CoreStateModule,
     MaterialModule,
     CoreDataModule,
+    RoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
