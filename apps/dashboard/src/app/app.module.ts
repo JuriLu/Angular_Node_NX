@@ -13,6 +13,10 @@ import {
   MaterialModule,
   materialRoutes,
 } from '@fem-production-angular/material';
+import {
+  CoreDataModule,
+  coreDataRoutes,
+} from '@fem-production-angular/core-data';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +27,7 @@ import {
     StoreModule.forRoot({}, {}),
     CoreStateModule,
     MaterialModule,
+    CoreDataModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

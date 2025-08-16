@@ -265,6 +265,36 @@
           "style": "scss"
         }
       }
+    },
+    "core-data": {
+      "projectType": "library",
+      "root": "libs/core-data",
+      "sourceRoot": "libs/core-data/src",
+      "prefix": "fem-production-angular",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/core-data/tsconfig.lib.json",
+              "libs/core-data/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/core-data/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/core-data/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
