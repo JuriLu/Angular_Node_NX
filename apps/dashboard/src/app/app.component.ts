@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Message } from '@fem-production-angular/api-interfaces';
+import { Message } from '@fem/api-interfaces';
 
 @Component({
   selector: 'fem-production-angular-root',

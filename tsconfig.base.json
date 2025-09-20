@@ -16,12 +16,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@fem-production-angular/api-interfaces": [
+      "@fem/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
       ],
-      "@fem-production-angular/core-state": ["libs/core-state/src/index.ts"],
-      "@fem-production-angular/material": ["libs/material/src/index.ts"],
-      "@fem-production-angular/core-data": ["libs/core-data/src/index.ts"]
+      "@fem/core-state": ["libs/core-state/src/index.ts"],
+      "@fem/material": ["libs/material/src/index.ts"],
+      "@fem/core-data": ["libs/core-data/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
