@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Widget } from '@fem/api-interfaces';
 
 @Component({
-  selector: 'fem-production-angular-home',
+  selector: 'fem-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })

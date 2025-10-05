@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Widget } from '@fem/api-interfaces';
 
 @Component({
-  selector: 'fem-production-angular-widgets-details',
+  selector: 'fem-widget-details',
   templateUrl: './widgets-details.component.html',
-  styleUrls: ['./widgets-details.component.scss']
+  styleUrls: ['./widgets-details.component.scss'],
 })
-export class WidgetsDetailsComponent implements OnInit {
+export class WidgetsDetailsComponent  {
+  currentWidget: Widget;
+  originalTitle = '';
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  @Input() set widget(value: Widget) {
+    if(value) this.originalTitle = value.title;
+    this.currentWidget = {...value};
+  };
+  @Output() saved = new EventEmitter;
+  @Output() cancelled = new EventEmitter;
 }
